@@ -6,8 +6,6 @@ public class Data {
     private String actualizacion;
     private String url;
 
-
-
     public String getNombre() {
         return nombre;
     }

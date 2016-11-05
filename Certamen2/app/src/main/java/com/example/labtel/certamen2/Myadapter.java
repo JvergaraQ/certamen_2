@@ -1,12 +1,13 @@
 package com.example.labtel.certamen2;
 
 
-import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.example.labtel.certamen2.Interfaces.ItemClickListener;
 
 import java.util.List;
 
@@ -22,8 +23,6 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.ViewHolder> {
 
         public ViewHolder(View v) {
             super(v);
-            //v.setTag(v);//
-            //v.setOnClickListener(this);//
             name= (TextView) v.findViewById(R.id.nombre);
             descp = (TextView) v.findViewById(R.id.descripcion);
             act = (TextView) v.findViewById(R.id.actualizacion);

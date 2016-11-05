@@ -22,8 +22,8 @@ public class ConectionHttp {
             conn.setDoInput(true);
 
             conn.connect();
-
             InputStream is = conn.getInputStream();
+
             return readIt(is);
 
         } catch (MalformedURLException e) {
@@ -48,6 +48,7 @@ public class ConectionHttp {
             inputStringBuilder.append('\n');
             line = bufferedReader.readLine();
         }
+        System.out.print(inputStringBuilder.toString());
         return inputStringBuilder.toString();
     }
 
